@@ -1,0 +1,393 @@
+
+body{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+}
+html{
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+}
+
+nav{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* fixing */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 3000;
+
+        height: 2cm;
+}
+nav #links a{
+        color: white;
+        text-decoration: none;
+        padding-left: 20px;
+        transition: 0.2s;
+       
+}
+
+#links a:hover{
+        color: red;
+}
+#icons{
+        display: flex; 
+        padding-left: 20%;        
+}
+#icons a {
+        color: black;      
+}
+
+/* icon divs */
+
+#icons div{
+        padding: 5px;
+        background-color: yellow;
+        margin: 5px;       
+}
+
+/* logo.. */
+
+#logo{
+        color: white;
+        font-family:'Courier New', Courier, monospace;
+        padding-right: 20%;
+}
+
+/* ........ */
+
+
+/* #brown{
+        position: absolute;
+        transform: translateX(0);
+        transform: translateY(1.6cm);
+        height: 480px;
+        width: 100%;
+        color: rgb(249, 249, 248);
+
+        background-image: url("pic 3.png"); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(70%);
+              
+} */
+#brown {
+        position: absolute;
+        transform: translateX(0);
+        transform: translateY(1.6cm);
+        height: 480px;
+        width: 100%;
+        color: rgb(249, 249, 248);
+        overflow: hidden; /* Ensure content does not overflow */
+    }
+    
+    #brown::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url("pic 3.png"); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(70%); /* Decrease brightness to 70% */
+        z-index: 1; 
+    }
+    
+    #brown > * {
+        position: relative; 
+        z-index: 2; 
+    }
+
+.yellow{
+        color: yellow;
+}
+.yellow2{
+        color: yellow;
+        padding: 0%;
+        margin: 0%;
+
+}
+
+#hading h1{
+        padding: 0%;
+        margin: 0%;
+}
+#hading{
+        width: 50%;
+        position: absolute;
+        transform: translate(2cm,4cm);
+        /* transform: translate(4cm); */
+
+}
+
+#hading button{
+        background-color: yellow;
+        color: black;
+        height: 35px;
+        border:0cap;
+}
+#hading a{
+        text-decoration: none;
+        color:yellow;
+        padding-left: 50px;
+        font-weight: bolder;
+        
+}
+
+#a3rd{
+        /* background-color: blueviolet; */
+        position: relative;
+        z-index: 2000;
+        height: 3cm;
+        width: 70%;
+        
+        transform: translate(6cm,13cm);
+        display: flex;
+        
+}  
+
+#a3rd div{
+        margin: 10px;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* padding: 30px; */
+        background-color: #4d545e;
+        color: white;
+        width: 6cm;
+        height: 5cm;
+        /* transition: 1s; */
+        transform: 0.01;
+}
+#a3rd div:hover{transform: scale(1.05);}
+#a3rd div:nth-child(2){
+        background-color: yellow;
+        /* height: 3.5cm; */
+        margin-top: -10px;
+        color: black;
+}
+#a3rd div:nth-child(2) p{
+        color: black;
+
+}
+#a3rd div h3,p{
+        margin: 0%;
+        /* color: white; */
+}
+/* ........ */
+#a4rd{ 
+        background-color: black;
+        height: 600px;
+        width: 100%;
+        transform: translate(0,427px);
+        display: flex;
+        /* padding: 20px; */
+
+}
+#why{
+        height: 10cm;
+        width: 12cm;
+        background-color:black;
+        /* padding-left: 20%; */
+        margin: 20px;
+}
+#cont{
+        display: flex;
+        /* flex-direction: column; */
+        margin: 20px;
+        height: 10cm;
+        width: 12cm;
+        background-color: black;
+        text-align:right;
+        justify-content: right;
+        align-items:center;
+
+        
+}
+
+.both{
+        display: flex;
+        position: relative;
+        transform: translate(3cm,5cm);
+        height: 10cm;
+        /* margin: 30px2 */
+}
+input,textarea,button{
+     margin: 10px;
+     /* padding-left: 10px; */
+     transition: 1s;
+     transform: 0.3s;
+}
+#cont button:hover{background: linear-gradient(to right, red, #e5ff00);
+        transform: scale(1.05);}
+#hading button{
+              transition: background 1s, transform 0.3s;}
+#hading button:hover{
+        background: linear-gradient(to right, red, #e5ff00);
+        transform: scale(1.05);
+}       
+form{
+        background-color: #4d545e;
+        /* padding-left: 100px; */
+        border: #4d545e solid 15px;
+        height: 8cm;
+        display: flex;
+        flex-direction: column;
+}
+input{
+        height: 1cm;
+}
+textarea{
+        height: 3cm;
+        text-decoration: none;
+}
+form button{
+        background-color: yellow;
+        border: 0cap;
+        height: 1cm;
+}
+#why a{
+        color: yellow;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: large;
+}
+#why h1,p{
+        color:rgb(249, 249, 249);
+        font-weight: bolder;
+}
+
+#cont img{
+        
+        width: 10cm;
+        height: 8cm;
+}
+
+
+/* ....satisfactio.... */
+
+
+    .satisfaction-container {
+        width: 100%;
+        background-color: #e0e0e0; /* Light gray background */
+        border-radius: 5px;
+        position: relative;
+        height: 5px; /* Height of the satisfaction bar */
+        margin: 20px 0; /* Margin for spacing */
+    }
+
+    .satisfaction-level {
+        width: 93%; /* Satisfaction level */
+        height: 100%;
+        background-color: yellow; /* yellow line */
+        border-radius: 5px;
+    }
+
+    .satisfaction-text {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        line-height: 30px; /* Center the text vertically */
+        color: white; /* Text color */
+        font-weight: bold;
+    }
+#why i{
+        color: white;
+        background-color: #4d545e;
+        width: 35px;
+        height: 35px;
+        font-size: xx-large;
+}
+
+#footer{
+        background-color: #4d545e;
+        color: white;
+        height: 800px;
+        /* width: 100; */
+        transform: translate(0,427px);
+        
+}
+#had{
+        display: flex;
+        padding: 5px;
+}
+#phar{
+        text-align: left;
+        justify-content: left;
+        align-items: center;
+        transform: translate(7cm,0);
+        
+}
+#phar p{
+        position: relative;
+        transform: translate(-3cm,2cm);
+}
+#hads{
+        position: relative;
+        transform: translate(2cm,1cm);
+}
+ #card1{
+        display: flex;
+        position: relative;
+        transform: translate(2cm,1cm);
+        /* text-align: center;
+        justify-content: center;
+        align-items: center; */
+        
+
+}
+.cards1 img{
+        height: 4cm;
+        width: 8cm;
+}
+.cards1 a{
+        text-decoration: none;
+        color: yellow;
+}
+.cards1{
+         /* display: flex;
+        flex-direction: row;  */
+         background-color: black;
+        color: white;
+        margin: 6px;
+        padding: 3px;
+        width: 8cm;
+        height: 7.5cm;
+        transform: 0.3;
+        
+
+        /* position: relative;
+        transform: translate(5cm,0); */
+}
+.cards1:hover{transform: scale(1.01);}
+.cards1 h2{
+        padding-top: 5px;
+
+} 
+.cards1 p{
+        transform: translate(0,0);
+}
+#card2{
+          display: flex;
+          position: relative;
+          transform: translate(2cm,1cm);
+}
+
+
+
+
+
+
